@@ -1,0 +1,71 @@
+body {
+    background: white;
+}
+
+.Login {
+    width: 350px;
+    background: rgb(214, 211, 211);
+    /*meletakkan form ke tengah*/
+    margin: 80px auto;
+    padding: 30px 20px;
+}
+
+.form_login {
+    font-size: 16pt;
+    color: black;
+}
+
+.tombol {
+    background: white;
+    color: black;
+    font-size: 16pt;
+    width: 40%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+.reset {
+    background: rgb(214, 211, 211);
+    font-size: 11pt;
+}
+
+.tulisan_login {
+    font-size: 20pt;
+}
+
+.register {
+    width: 350px;
+    background: rgb(214, 211, 211);
+    /*meletakkan form ke tengah*/
+    margin: 70px auto;
+    padding: 30px 10px;
+}
+
+.tulisan_daftar {
+    font-size: 20pt;
+    font-weight: bold;
+    color: black;
+
+}
+
+.form_daftar {
+    font-size: 14pt;
+    color: black;
+}
+
+.m-60 {
+    margin-right: 60px;
+}
+
+.m-30 {
+    margin-right: 30px;
+}
+
+.m-35 {
+    margin-right: 35px;
+}
+
+.m-5 {
+    margin-right: 5px;
+}
