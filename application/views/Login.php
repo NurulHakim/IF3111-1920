@@ -16,21 +16,22 @@
         </center>
         <br>
         <form action="Login.php" method="post" onSubmit="return validasi()">
-            <div>
-                <center>
-                    <label>Username</label>
-                    <br>
-                    <input type="text" name="username" placeholder="username" class="form_login" id="username" />
-                </center>
+            <div class="form_login">
+                <table>
+                    <tr>
+                        <td><img class="m-user" src="user2.png"> </img></td>
+                        <td><input type="text" name="username" placeholder="Username" /></td>
+                    </tr>
+                </table>
             </div>
             <br>
-            <br>
-            <div>
-                <center>
-                    <label>Password</label>
-                    <br>
-                    <input type="password" name="password" placeholder="password" class="form_login" id="password" />
-                </center>
+            <div class="form_login">
+                <table>
+                    <tr>
+                        <td><img class="m-pass" src="pass.png"> </img></td>
+                        <td><input type="text" name="password" placeholder="Password" /></td>
+                    </tr>
+                </table>
             </div>
             <br>
             <br>
@@ -47,6 +48,8 @@
                 </center>
         </form>
     </div>
+    </div>
+
 </body>
 
 </html>

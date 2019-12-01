@@ -15,21 +15,10 @@
             <p class="tulisan_daftar">DAFTAR</p>
         </center>
         <form action="Daftar.php" method="POST">
-
             <div class="form_daftar">
                 <table>
                     <tr>
-                        <td><label class="m-60">Nama</label></td>
-                        <td>:</td>
-                        <td><input type="text" name="nama" placeholder="Nama Lengkap" /></td>
-                    </tr>
-                </table>
-            </div>
-            <br>
-            <div class="form_daftar">
-                <table>
-                    <tr>
-                        <td><label class="m-30">Username</label></td>
+                        <td><img class="m-username" src="user2.png"> </img></td>
                         <td>:</td>
                         <td><input type="text" name="username" placeholder="Username" /></td>
                     </tr>
@@ -39,7 +28,7 @@
             <div class="form_daftar">
                 <table>
                     <tr>
-                        <td><label class="m-60">Email</label></td>
+                        <td><img class="m-email" src="mail.png"></img></td>
                         <td>:</td>
                         <td><input type="email" name="email" placeholder="E-mail" class="form_daftar" /></td>
                     </tr>
@@ -47,18 +36,12 @@
             </div>
             <br>
             <div class="form_daftar">
-                <td><label class="m-35">Password</label></td>
+                <td><img class="m-password" src="pass.png"> </img> </td>
                 <td>:</td>
                 <td><input type="password" name="password" placeholder="Password" class="form_daftar" /></td>
             </div>
             <br>
-            <div class="form_daftar">
 
-                <td><label class="m-5">Jenis kelamin</label></td>
-                <td>:</td>
-                <td><label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
-                    <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label></td>
-            </div>
             <br>
             <br>
             <div class="form_daftar">
