@@ -11,7 +11,14 @@
           margin: 0px;
         }
 
-        .sub a{
+        .header{
+            font-family: arial;
+            font-size : 15px;
+            text-decoration:none 
+        }
+
+        
+        .navigasi a{
             font-family: arial;
             font-size : 15px;
             text-decoration:none
@@ -36,18 +43,29 @@
 </head>
 
 <body>
+    
+    <div class="header">
+        <a href="#" class="active">Home</a>
+        <a href="#">Link</a>
+        
+    </div>
 
     <div class="judul">
         <h1>SIMPLE LAPOR!</h1>
     </div>
-    <div class="sub">
-        <ul id="inline">
-            <li><a href="">Lihat Laporan</a></li>
-            <li><a href="">Buat Laporan</a></li>
-            <li><a href="">Edit Laporan</a></li>
-        </ul>
-        <hr width="28%" align="left">
+    <div class="navigasi">
+        <div class="container">
+            <ul id="inline">
+                <li><a href="">Lihat Laporan</a></li>
+                <li><a href="">Buat Laporan</a></li>
+            </ul>
+        </div>
+            <hr width="28%" align="left">
     </div>
+
+
+
+    
     
 </body>
 </html>
