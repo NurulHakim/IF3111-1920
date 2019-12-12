@@ -14,7 +14,13 @@
         .header{
             font-family: arial;
             font-size : 15px;
-            text-decoration:none 
+            text-decoration:none;
+            float: right;
+            padding-right: 30px;
+        }
+
+        . header b{
+            text-decoration: none;
         }
 
         
@@ -43,16 +49,14 @@
 </head>
 
 <body>
-    
-    <div class="header">
-        <a href="#" class="active">Home</a>
-        <a href="#">Link</a>
-        
+    <div class="header"></br>
+        <a href="">KELUAR</a>
     </div>
 
     <div class="judul">
         <h1>SIMPLE LAPOR!</h1>
     </div>
+
     <div class="navigasi">
         <div class="container">
             <ul id="inline">
