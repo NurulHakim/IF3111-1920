@@ -22,11 +22,14 @@
     </div>
     <br>
     <div class="Kotak_Komentar">
-        <textarea name="Laporan/Komentar" rows="25" cols="110">Laporan/Komentar</textarea>
+        <textarea name="Laporan/Komentar" rows="18" cols="110">Laporan/Komentar</textarea>
     </div>
     <div class="Aspek">
         <select>
-            <option value="Keluhan">Keluhan terhadap sarana dan prasarana </option>
+            <option value="Keluhan1">Keluhan tentang sarana dan prasarana </option>
+            <option value="Keluhan2">Keluhan tentang proses pembuatan surat perizinan </option>
+            <option value="Keluhan3">Keluhan tentang proses pengajaran </option>
+            <option value="Keluhan4">Keluhan tentang proses penilaian </option>
         </select>
     </div>
     <div class="form">
