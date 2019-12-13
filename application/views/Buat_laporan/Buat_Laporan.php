@@ -25,13 +25,7 @@
         <textarea name="Laporan/Komentar" rows="25" cols="100">Laporan/Komentar</textarea>
     </div>
     <div class="Aspek">
-        <select name="Pilih Aspek Pelaporan/Komentar">
-            <option>Keluhan sarana dan prasarana</option>
-        </select>
-    </div>
-    <div class="Aspek">
         <select>
-            <option class="text">Pilih Aspek Pelaporan/Komentar</option>
             <option value="Keluhan">Keluhan terhadap sarana dan prasarana </option>
         </select>
     </div>
