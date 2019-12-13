@@ -1,0 +1,17 @@
+.judul {
+    text-align: center;
+    margin: 25px;
+}
+
+.Laporan_Komentar {
+    margin-left: 350px;
+    margin-right: 350px;
+    border-bottom-style: solid;
+    line-height: 200%;
+}
+
+.Kotak_Komentar {
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-top: 0px;
+}
