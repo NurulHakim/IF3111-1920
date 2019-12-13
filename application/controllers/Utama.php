@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Utama extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,8 +18,24 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
-		$this->load->view('halaman_utama/halaman_utama');
+	public function __contruct(){
+
 	}
+
+	public function index(){
+		$this->load->model('model_laporan');
+
+		$this->load->helper('url');
+		$data['laporan'] = $this->model_laporan->get_laporan_teratas();
+
+		$this->load->view('halaman_utama/halaman_utama', $data);
+
+	}
+
+	public function laporan_teratas(){
+
+		$data['laporan'] = $this->model_laporan->get_laporan_teratas();
+	}
+
+
 }

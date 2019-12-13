@@ -72,6 +72,10 @@
           text-align: right;
         }
 
+        table{
+          width: 1100px;
+        }
+
     </style>
 
   </head>
@@ -114,49 +118,46 @@
 
       </div> <!--end dari class laporan  -->
 
-      <div class="container_laporan_teratas">
 
-        <?php
-          for($i = 0 ; $i < 3 ; $i++){
-         ?>
-         <hr>
-          <table>
-            <tr>
-                <td colspan="2">
-                  <div class="highlight_laporan">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
+
+        <div class="container_laporan_teratas">
+
+          <?php
+            foreach($laporan as $x){
+           ?>
+           <hr>
+            <table>
+              <tr>
+                  <td colspan="2">
+                    <div class="highlight_laporan">
+                      <?php echo $x->isi_laporan; ?>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="lampiran_laporan">
+                      Lampiran: <a href="<?php echo $x->lampiran; ?>" id="judul_lampiran"><?php echo $x->lampiran; ?></a>
                   </div>
                 </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="lampiran_laporan">
-                    Lampiran: <a href="#" id="judul_lampiran">blablabla.doc</a>
-                </div>
-              </td>
 
-              <td>
-                <div class="selengkapnya">
-                  Waktu: <span id="tanggal_laporan">20-11-2019 20:00</span>
-                  <a id="lihat" href="#">Lihat Selengkapnya > </a>
-                </div>
-              </td>
-            </tr>
+                <td>
+                  <div class="selengkapnya">
+                    Waktu: <span id="tanggal_laporan"><?php echo $x->tanggal; ?></span>
+                    <a id="lihat" href="<?php echo $x->id_laporan; ?>">Lihat Selengkapnya > </a>
+                  </div>
+                </td>
+              </tr>
 
 
-          </table>
-        <?php } ?>
+            </table>
+          <?php } ?>
 
 
-      </div> <!--end dari class container_laporan_teratas  -->
+        </div> <!--end dari class container_laporan_teratas  -->
 
       <hr>
 
-    </div>  <!-- end dari class container_laporan -->
+      </div>  <!-- end dari class container_laporan -->
   </body>
 </html>
