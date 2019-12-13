@@ -12,6 +12,7 @@
           background-color: black;
           padding: 10px;
           margin: 0px;
+          position:sticky;
         }
 
         .navigasi a{
@@ -66,6 +67,15 @@
 
         #lihat{
           padding-left: 30px;
+        }
+
+        .tombol_lebih_banyak{
+          padding-top: 35px;
+          text-align: center;
+        }
+
+        #lebih_banyak{
+          width: 300px;
         }
 
         .selengkapnya{
@@ -144,7 +154,7 @@
                 <td>
                   <div class="selengkapnya">
                     Waktu: <span id="tanggal_laporan"><?php echo $x->tanggal; ?></span>
-                    <a id="lihat" href="<?php echo $x->id_laporan; ?>">Lihat Selengkapnya > </a>
+                    <a id="lihat" href="<?php echo base_url(); echo "Utama/tampil_lapor?id=$x->id_laporan"; ?>">Lihat Selengkapnya > </a>
                   </div>
                 </td>
               </tr>
@@ -153,6 +163,9 @@
             </table>
           <?php } ?>
 
+          <div class="tombol_lebih_banyak">
+            <button href="<?php echo base_url(); echo "utama/laporan_teratas"; ?>" id="lebih_banyak">Tampilkan lebih banyak</button>
+          </div>
 
         </div> <!--end dari class container_laporan_teratas  -->
 

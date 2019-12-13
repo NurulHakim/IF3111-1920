@@ -33,7 +33,6 @@ class Utama extends CI_Controller {
 	}
 
 	public function laporan_teratas(){
-
 		$data['laporan'] = $this->model_laporan->get_laporan_teratas();
 	}
 
