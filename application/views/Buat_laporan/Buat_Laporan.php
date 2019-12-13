@@ -17,6 +17,10 @@
     <div>
         <p class="Laporan_Komentar">Buat Laporan/Komentar</p>
     </div>
+    <div class="garis">
+        <hr />
+    </div>
+    <br>
     <div class="Kotak_Komentar">
         <textarea name="Laporan/Komentar" rows="25" cols="100">Laporan/Komentar</textarea>
     </div>
@@ -24,8 +28,28 @@
         <select name="Pilih Aspek Pelaporan/Komentar">
             <option>Keluhan sarana dan prasarana</option>
         </select>
-
     </div>
+    <div class="Aspek">
+        <select>
+            <option class="text">Pilih Aspek Pelaporan/Komentar</option>
+            <option value="Keluhan">Keluhan terhadap sarana dan prasarana </option>
+        </select>
+    </div>
+    <div class="form">
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="file" name="upload" class="upload">
+        </form>
+    </div>
+    <div>
+        <input type="button" value="Buat LAPOR!" class="tombol">
+    </div>
+    <br>
+    <div class="garis">
+        <hr />
+    </div>
+    <br>
+    <br>
+    <br>
 </body>
 
 </html>

@@ -1,17 +1,51 @@
 .judul {
-    text-align: center;
-    margin: 25px;
+
+	text-align: center;
+	margin: 25px;
 }
 
 .Laporan_Komentar {
-    margin-left: 350px;
-    margin-right: 350px;
-    border-bottom-style: solid;
-    line-height: 200%;
+	margin-left: 350px;
+	margin-right: 350px;
+
 }
 
 .Kotak_Komentar {
-    margin-left: 350px;
-    margin-right: 350px;
-    padding-top: 0px;
+	margin-left: 350px;
+	margin-right: 350px;
+	padding-top: 0px;
+}
+
+.Aspek {
+	padding-top: 20px;
+	margin-left: 350px;
+	margin-right: 350px;
+}
+
+.form {
+	line-height: 300%;
+	margin-left: 350px;
+	margin-right: 350px;
+}
+
+.tombol {
+	margin-left: 1022px;
+	background-color: white;
+	color: black;
+	width: 118px;
+	border: 1px solid black;
+	padding: 8px 5px;
+	border-bottom-style: solid;
+	line-height: 200%;
+}
+
+.upload {
+	background-color: white;
+	color: black;
+}
+
+.garis {
+	line-height: 400%;
+	margin-left: 350px;
+	margin-right: 350px;
 }
