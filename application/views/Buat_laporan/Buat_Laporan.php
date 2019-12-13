@@ -22,7 +22,7 @@
     </div>
     <br>
     <div class="Kotak_Komentar">
-        <textarea name="Laporan/Komentar" rows="25" cols="100">Laporan/Komentar</textarea>
+        <textarea name="Laporan/Komentar" rows="25" cols="110">Laporan/Komentar</textarea>
     </div>
     <div class="Aspek">
         <select>
