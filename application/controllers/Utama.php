@@ -36,6 +36,10 @@ class Utama extends CI_Controller {
 		$data['laporan'] = $this->model_laporan->get_laporan_teratas();
 	}
 
+	public function buatlaporan(){
+			$this->load->view('Buat_laporan/Buat_Laporan');
+	}
+
 	public function lihatlaporan(){
 
 		$data['laporan'] = $this->model_lihatlaporan->get_laporan_teratas();

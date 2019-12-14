@@ -109,7 +109,7 @@
 
 
       <div class ="laporan">
-          <a href="#"><b> + </b> Buat Laporan/Komentar</a>
+          <a href="<?php echo base_url() . "index.php/Buat_laporan/" ?>"><b> + </b> Buat Laporan/Komentar</a>
           <!-- <textarea id="isi_laporan" name="isi_laporan" rows="10" cols="50" placeholder="Buat Laporan"></textarea>
           </br>
 
