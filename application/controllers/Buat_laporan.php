@@ -14,7 +14,7 @@ class Buat_laporan extends CI_Controller
         $isi_laporan = $this->input->post('Komentar');
         $username = "iyuy";
         $config['upload_path'] = './assets/upload/';
-        $config['allowed_types'] = 'gif|jpg|png';
+        $config['allowed_types'] = 'jpg|jpeg|png|doc|docx|xls|xlxs|ppt|pptx|pdf'; //doc, docx, xls, xlsx, ppt, pptx, pdf
         $this->load->library('upload', $config);
 
 
