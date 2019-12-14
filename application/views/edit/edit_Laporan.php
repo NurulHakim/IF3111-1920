@@ -21,6 +21,8 @@
         <hr />
     </div>
     <br>
+
+    <form onsubmit="return validasi()" action="<?php echo base_url() . "index.php/Lihat_selengkapnya/update_laporan" ?>" method="post" enctype="multipart/form-data">
     <div class="Kotak_Komentar">
         <textarea name="Laporan/Komentar" rows="18" cols="110"><?php foreach($laporan as $x )echo $x-> isi_laporan; ?></textarea>
     </div>
@@ -40,8 +42,9 @@
         </form>
     </div>
     <div>
-        <input type="button" value="Buat LAPOR!" class="tombol">
+        <input type="submit" value="Buat LAPOR!" class="tombol">
     </div>
+    </form>
     <br>
     <div class="garis">
         <hr />
