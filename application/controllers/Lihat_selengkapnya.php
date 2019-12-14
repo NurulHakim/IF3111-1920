@@ -34,4 +34,16 @@ class Lihat_selengkapnya extends CI_Controller {
 
 		$data['laporan'] = $this->model_lihat_selengkapnya->get_lihat_selengkapnya();
 	}
+	
+	public function hapus($id_laporan){
+
+		//$data['laporan'] = $this->model_lihat_selengkapnya->hapus_laporan();
+		$this->load->model('model_lihat_selengkapnya');
+
+		$where = array('id_laporan' => $id_laporan);
+		$this->model_lihat_selengkapnya->hapus_laporan($where,'laporan');
+		redirect('Lihat_selengkapnya/index');
+	}
+
+
 }

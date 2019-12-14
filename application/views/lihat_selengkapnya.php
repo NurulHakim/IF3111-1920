@@ -48,6 +48,12 @@
           text-align: right;
           text-decoration: none;
         }
+
+        .edit{
+          text-align: right;
+          text-decoration: none;
+        }
+
         table{
           width: 1100px;
         }
@@ -73,14 +79,14 @@
            <hr>
             <table>
               <tr>
-                  <td colspan="3">
+                  <td colspan="4">
                     <div class="highlight_laporan">
                       <?php echo $x->isi_laporan; ?>
                     </div>
                   </td>
               </tr>
               <tr>
-                <td colspan="3">
+                <td colspan="4">
                   <div class="lampiran_laporan">
                       Lampiran: <a href="<?php echo $x->lampiran; ?>" id="judul_lampiran"><?php echo $x->lampiran; ?></a>
                   </div>
@@ -98,10 +104,19 @@
                         Aspek: <span id="aspek_laporan"><?php echo $x->aspek; ?></span>
                     </div>
                     </td>
+
                     <td>
-                    <div class="hapus">
-                        <a href="">Hapus Laporan/Komentar<b> X</b></a>
-                    </div>
+                    <div class="edit">
+                        <a href="">Edit Laporan</a>
+                        
+                      </div>
+                    </td>
+
+                    <td>
+                    <div class="hapus" onclick="return confirm('Apakah kamu yakin ingin menghapus laporan?')">
+                        <!-- <a href=  >Hapus Laporan/Komentar<b> X</b></a> -->
+                        <?php echo anchor('Lihat_selengkapnya/hapus/'.$x->id_laporan,'Hapus Laporan/Komentar'); ?>
+                      </div>
                     </td>
 
                     
