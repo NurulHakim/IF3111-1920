@@ -113,3 +113,20 @@ anchor tag.
 Dosen       : Rajif Agung Yunmar, S.Kom., M.Cs.	,Ahmad Luky Ramdani, S.Komp., M.Kom. ,
 Arief Ichwani, S.Kom., M.Cs., Andre Febrianto, S.Kom., M.Eng, Ilham Firman Ashari, S.Kom., M.T
 
+
+Penjelasan Kelompok
+
+1. Instalasi Framework
+Kelompok ini menggunakan framework Codeigniter. Koneksi basis data menggunakan phpmyadmin: 
+- Terlebih dahulu membuat basis data dengan nama lapor_pabw. 
+- Setelah itu dibuat tabel laporan dan akun.
+- tabel laporan berisi field id_laporan, aspek, isi_laporan, tanggal, lampiran, username
+- koneksi basis data di taruh di folder model.
+- terdapat 4 file model yang terdapat di file models tersebut
+
+2. validasi pada client-side
+- validasi ketika form kosong atau jumlah isi laporan kurang dari 20 kata
+
+3. ajax
+- 
+
