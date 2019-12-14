@@ -42,7 +42,8 @@
         </form>
     </div>
     <div>
-        <input type="submit" value="Buat LAPOR!" class="tombol">
+        <button type="submit" class="tombol">Simpan</button>
+        <!-- <input type="submit" value="Buat LAPOR!" class="tombol"> -->
     </div>
     </form>
     <br>
