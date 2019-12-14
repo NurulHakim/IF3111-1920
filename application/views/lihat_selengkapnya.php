@@ -46,6 +46,7 @@
         }
         .hapus{
           text-align: right;
+          text-decoration: none;
         }
         table{
           width: 1100px;
@@ -54,7 +55,6 @@
     </style>
 
 
-    </style>
 
 </head>
 <body>
@@ -100,7 +100,7 @@
                     </td>
                     <td>
                     <div class="hapus">
-                        <a href="">Hapus Laporan/Komentar</a>
+                        <a href="">Hapus Laporan/Komentar<b> X</b></a>
                     </div>
                     </td>
 
