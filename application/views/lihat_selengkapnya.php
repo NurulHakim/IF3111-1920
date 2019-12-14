@@ -107,7 +107,9 @@
 
                     <td>
                     <div class="edit">
-                        <a href="">Edit Laporan</a>
+                        <!-- <a href="">Edit Laporan</a> -->
+                        <?php echo anchor('Lihat_selengkapnya/edit_laporan/'.$x->id_laporan,'Edit Laporan'); ?>
+
                         
                       </div>
                     </td>

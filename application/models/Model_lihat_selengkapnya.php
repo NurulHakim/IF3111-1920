@@ -20,6 +20,13 @@ class Model_lihat_selengkapnya extends CI_Model{
     $this->db->where($where);
     $this->db->delete($laporan);
   }
+
+  function get_one_laporan($id_laporan){
+    $sql = "select * from laporan where id_laporan='$id_laporan'";
+    $exec = $this->db->query($sql);
+
+    return $exec->result();
+  }
 }
 
  ?>
