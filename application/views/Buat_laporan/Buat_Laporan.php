@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+if(!isset($data)){
+
+}
+
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
     <title>Buat Laporan</title>
+    <script type="text/javascript" src="assets/javascript/validasi.js">
+
+    </script>
 </head>
 
 <body>
@@ -19,31 +28,39 @@
     </div>
     <div class="garis">
         <hr />
+        <span id="peringatan"></span>
     </div>
     <br>
-    <div class="Kotak_Komentar">
-        <textarea name="Laporan/Komentar" rows="18" cols="110">Laporan/Komentar</textarea>
-    </div>
-    <div class="Aspek">
-        <select>
-            <option value="Keluhan1">Keluhan tentang sarana dan prasarana </option>
-            <option value="Keluhan2">Keluhan tentang proses pembuatan surat perizinan </option>
-            <option value="Keluhan3">Keluhan tentang proses pengajaran </option>
-            <option value="Keluhan4">Keluhan tentang proses penilaian </option>
-        </select>
-    </div>
-    <div class="form">
-        <form action="" method="post" enctype="multipart/form-data">
-            <input type="file" name="upload" class="upload">
-        </form>
-    </div>
-    <div>
-        <input type="button" value="Buat LAPOR!" class="tombol">
-    </div>
+
+    <form onsubmit="return validasi()" action="<?php echo base_url() . "Buat_laporan/kirim_L" ?>" method="post" enctype="multipart/form-data">
+        <div class="Kotak_Komentar">
+            <textarea  id="komentar" name="Komentar" rows="18" cols="80">Laporan/Komentar</textarea>
+        </div>
+
+        <div class="Aspek">
+            <select name="aspek" id ="aspek" >
+              <option value="">Pilih Aspek</option>
+              <option value="1">Staff</option>
+                <option value="1">Dosen</option>
+                <option value="2">Mahasiswa </option>
+                <option value="3">infrastruktur </option>
+                <option value="4">Pengajaran </option>
+            </select>
+        </div>
+        <div class="form">
+
+            <input id="lampiran" type="file" name="lampiran" class="upload">
+
+        </div>
+        <div>
+            <button type="submit" class = "tombol">Buat LAPOR!</button>
+        </div>
+    </form>
     <br>
     <div class="garis">
         <hr />
     </div>
+
     <br>
     <br>
     <br>
