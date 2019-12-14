@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Lihat_selengkapnya extends CI_Controller {
+class Lihat_selengkapnya extends CI_Controller
+{
 
 	/**
 	 * Index Page for this controller.
@@ -18,34 +19,37 @@ class Lihat_selengkapnya extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function __contruct(){
+	public function __contruct()
+	{ }
 
-	}
-
-	public function index(){
-        $this->load->model('model_lihat_selengkapnya');
+	public function index($id_laporan)
+	{
+		$this->load->model('model_lihat_selengkapnya');
 
 		$this->load->helper('url');
-        $data['laporan'] = $this->model_lihat_selengkapnya->get_lihat_selengkapnya();
-        $this->load->view('lihat_selengkapnya', $data);
-    }
+		$data['laporan'] = $this->model_lihat_selengkapnya->get_one_laporan($id_laporan);
+		$this->load->view('lihat_selengkapnya', $data);
+	}
 
-    public function lihat(){
+	public function lihat()
+	{
 
 		$data['laporan'] = $this->model_lihat_selengkapnya->get_lihat_selengkapnya();
 	}
-	
-	public function hapus($id_laporan){
+
+	public function hapus($id_laporan)
+	{
 
 		//$data['laporan'] = $this->model_lihat_selengkapnya->hapus_laporan();
 		$this->load->model('model_lihat_selengkapnya');
 
 		$where = array('id_laporan' => $id_laporan);
-		$this->model_lihat_selengkapnya->hapus_laporan($where,'laporan');
-		redirect('Lihat_selengkapnya/index');
+		$this->model_lihat_selengkapnya->hapus_laporan($where, 'laporan');
+		redirect('Utama/index');
 	}
 
-	public function edit_laporan($id_laporan){
+	public function edit_laporan($id_laporan)
+	{
 
 		//$data['laporan'] = $this->model_lihat_selengkapnya->hapus_laporan();
 		$this->load->model('model_lihat_selengkapnya');
@@ -53,8 +57,5 @@ class Lihat_selengkapnya extends CI_Controller {
 		//$where = array('id_laporan' => $id_laporan);
 		$data['laporan'] = $this->model_lihat_selengkapnya->get_one_laporan($id_laporan);
 		$this->load->view('edit/edit_Laporan', $data);
-    }
-	
-
-
+	}
 }

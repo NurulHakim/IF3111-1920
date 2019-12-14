@@ -24,7 +24,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 */
 
-$config['base_url'] = 'http://localhost/IF3111-1920/';
+$config['base_url'] = 'http://localhost:8080/tucil/IF3111-1920/';
 
 /*
 |--------------------------------------------------------------------------

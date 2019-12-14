@@ -28,7 +28,7 @@ class Buat_laporan extends CI_Controller
         //$aspek,$isi_laporan,$tanggal,$lampiran,$username
         if ($this->Model_buat_laporan->kirim($aspek, $isi_laporan, "1990-12-12", $lampiran, $username)) {
 
-            $this->load->view('halaman_utama/halaman_utama');
+            redirect('Utama/index');
         }
     }
 }
