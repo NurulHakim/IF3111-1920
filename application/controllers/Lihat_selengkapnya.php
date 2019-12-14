@@ -57,5 +57,15 @@ class Lihat_selengkapnya extends CI_Controller
 		//$where = array('id_laporan' => $id_laporan);
 		$data['laporan'] = $this->model_lihat_selengkapnya->get_one_laporan($id_laporan);
 		$this->load->view('edit/edit_Laporan', $data);
+		//redirect('Utama/index');
 	}
+
+	public function update_laporan(){
+		$this->load->model('model_lihat_selengkapnya');
+		if($this->model_lihat_selngkapnya->edit_laporan($where, 'laporan')){
+			redirect('Utama/index');
+		}
+	}
+
+	
 }
