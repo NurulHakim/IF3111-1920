@@ -118,6 +118,7 @@ Penjelasan Kelompok
 
 1. Instalasi Framework
 Kelompok ini menggunakan framework Codeigniter. Koneksi basis data menggunakan phpmyadmin: 
+- kelompok kami menggunakan port 8080
 - Terlebih dahulu membuat basis data dengan nama lapor_pabw. 
 - Setelah itu dibuat tabel laporan dan akun.
 - tabel laporan berisi field id_laporan, aspek, isi_laporan, tanggal, lampiran, username
