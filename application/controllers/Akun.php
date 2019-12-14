@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Utama extends CI_Controller {
+class Akun extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -23,23 +23,15 @@ class Utama extends CI_Controller {
 	}
 
 	public function index(){
-		$this->load->model('model_laporan');
+        $this->load->model('model_lihatlaporan');
 
 		$this->load->helper('url');
-		$data['laporan'] = $this->model_laporan->get_laporan_teratas();
+        $data['laporan'] = $this->model_lihatlaporan->get_lihatlaporan();
+        $this->load->view('akun/akun', $data);
+    }
 
-		$this->load->view('halaman_utama/halaman_utama', $data);
+    public function lihatlaporan(){
 
+		$data['laporan'] = $this->model_lihatlaporan->get_lihatlaporan();
 	}
-
-	public function laporan_teratas(){
-		$data['laporan'] = $this->model_laporan->get_laporan_teratas();
-	}
-
-	public function lihatlaporan(){
-
-		$data['laporan'] = $this->model_lihatlaporan->get_laporan_teratas();
-	}
-
-
 }

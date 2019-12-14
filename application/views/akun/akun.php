@@ -45,6 +45,50 @@
             margin-left: 15px;
             margin-right: 15px;
         }
+
+        input[type=text]{
+
+            width: 750px;
+        }
+
+        .laporan{
+            padding-top: 10px;
+            text-align: center;
+        }
+        .container_laporan{
+        padding-top: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-bottom: 10px;
+        }
+
+        .container_laporan_teratas{
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        }
+
+        .highlight_laporan{
+        padding-top: 20px;
+        padding-bottom: 50px;
+        }
+
+        .waktu_laporan{
+        text-align: right;
+        }
+
+        #lihat{
+        padding-left: 30px;
+        }
+
+        .selengkapnya{
+        text-align: right;
+        }
+
+        table{
+        width: 1100px;
+        }
+
     </style>
 </head>
 
@@ -66,7 +110,44 @@
         </div>
             <hr width="28%" align="left">
     </div>
+    /* <?php
+    foreach($laporan as $x ){
+        echo $x->isi_laporan;
+    }
+    ?>
 
+<div class="container_laporan_teratas">
+
+    <?php
+    foreach($laporan as $x){
+    ?>
+    <hr>
+    <table>
+        <tr>
+            <td colspan="2">
+            <div class="highlight_laporan">
+                <?php echo $x->isi_laporan; ?>
+            </div>
+            </td>
+        </tr>
+        <tr>
+        <td>
+            <div class="lampiran_laporan">
+                Lampiran: <a href="<?php echo $x->lampiran; ?>" id="judul_lampiran"><?php echo $x->lampiran; ?></a>
+            </div>
+        </td>
+
+        <td>
+            <div class="selengkapnya">
+            Waktu: <span id="tanggal_laporan"><?php echo $x->tanggal; ?></span>
+            <a id="lihat" href="<?php echo $x->id_laporan; ?>">Lihat Selengkapnya > </a>
+            </div>
+        </td>
+        </tr>
+
+
+    </table>
+    <?php } ?>
 
 
     
