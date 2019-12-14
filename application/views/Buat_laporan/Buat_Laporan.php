@@ -2,11 +2,10 @@
 <html lang="en">
 
 <?php
-if(!isset($data)){
-
-}
+if (!isset($data)) { }
 
 ?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,13 +33,13 @@ if(!isset($data)){
 
     <form onsubmit="return validasi()" action="<?php echo base_url() . "index.php/Buat_laporan/kirim_L" ?>" method="post" enctype="multipart/form-data">
         <div class="Kotak_Komentar">
-            <textarea  id="komentar" name="Komentar" rows="18" cols="80">Laporan/Komentar</textarea>
+            <textarea id="komentar" name="Komentar" rows="18" cols="110">Laporan/Komentar</textarea>
         </div>
 
         <div class="Aspek">
-            <select name="aspek" id ="aspek" >
-              <option value="">Pilih Aspek</option>
-              <option value="1">Staff</option>
+            <select name="aspek" id="aspek">
+                <option value="">Pilih Aspek</option>
+                <option value="1">Staff</option>
                 <option value="1">Dosen</option>
                 <option value="2">Mahasiswa </option>
                 <option value="3">infrastruktur </option>
@@ -53,7 +52,7 @@ if(!isset($data)){
 
         </div>
         <div>
-            <button type="submit" class = "tombol">Buat LAPOR!</button>
+            <button type="submit" class="tombol">Buat LAPOR!</button>
         </div>
     </form>
     <br>
