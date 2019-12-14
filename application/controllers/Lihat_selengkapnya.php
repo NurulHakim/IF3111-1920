@@ -60,12 +60,24 @@ class Lihat_selengkapnya extends CI_Controller
 		//redirect('Utama/index');
 	}
 
-	public function update_laporan(){
+	public function update_laporan($id_laporan)
+	{
+		$aspek = $this->input->post('aspek');
+		$isi_laporan = $this->input->post('Komentar');
+		$username = "iyuy";
+		$config['upload_path'] = './assets/upload/';
+		$config['allowed_types'] = 'jpg|jpeg|png|doc|docx|xls|xlxs|ppt|pptx|pdf'; //doc, docx, xls, xlsx, ppt, pptx, pdf
+		$this->load->library('upload', $config);
+
+
+
+		$this->upload->do_upload('lampiran');
+		echo $this->upload->display_errors();
+		$lampiran = $this->upload->data('file_name');
+
 		$this->load->model('model_lihat_selengkapnya');
-		if($this->model_lihat_selngkapnya->edit_laporan($where, 'laporan')){
+		if ($this->model_lihat_selengkapnya->edit_laporan($id_laporan, $aspek, $isi_laporan, $lampiran)) {
 			redirect('Utama/index');
 		}
 	}
-
-	
 }

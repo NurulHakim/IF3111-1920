@@ -1,0 +1,52 @@
+.judul {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.detail {
+	padding-left: 30px;
+}
+
+body {
+	margin: 0px;
+}
+
+
+.container_lihat_selengkapnya {
+	padding-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.highlight_laporan {
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.waktu_laporan {
+	text-align: left;
+}
+
+#lihat {
+	padding-left: 30px;
+}
+
+.selengkapnya {
+	text-align: left;
+
+
+}
+
+.hapus {
+	text-align: right;
+	text-decoration: none;
+}
+
+.edit {
+	text-align: right;
+	text-decoration: none;
+}
+
+table {
+	width: 1100px;
+}

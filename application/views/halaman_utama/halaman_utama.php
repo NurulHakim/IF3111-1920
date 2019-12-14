@@ -5,97 +5,13 @@
   <meta charset="utf-8">
   <title>Halaman Utama</title>
 
-  <style media="screen">
-    body {
-      margin: 0px;
-    }
-
-    .navigasi {
-      background-color: black;
-      padding: 10px;
-      margin: 0px;
-      position: sticky;
-    }
-
-    .navigasi a {
-      text-decoration: none;
-      text-decoration-style: solid;
-      font-display: block;
-      color: white;
-      padding-right: 10px;
-
-    }
-
-    .judul {
-      text-align: center;
-      padding-top: 50px;
-    }
-
-    .pencarian {
-      padding-left: 150px;
-      padding-right: 150px;
-    }
-
-    input[type=text] {
-
-      width: 750px;
-    }
-
-    .laporan {
-      padding-top: 10px;
-      text-align: center;
-    }
-
-    .container_laporan {
-      padding-top: 20px;
-      padding-left: 100px;
-      padding-right: 100px;
-      padding-bottom: 10px;
-    }
-
-    .container_laporan_teratas {
-      padding-top: 20px;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    .highlight_laporan {
-      padding-top: 20px;
-      padding-bottom: 50px;
-    }
-
-    .waktu_laporan {
-      text-align: right;
-    }
-
-    #lihat {
-      padding-left: 30px;
-    }
-
-    .tombol_lebih_banyak {
-      padding-top: 35px;
-      text-align: center;
-    }
-
-    #lebih_banyak {
-      width: 300px;
-    }
-
-    .selengkapnya {
-      text-align: right;
-    }
-
-    table {
-      width: 1100px;
-    }
-  </style>
+  <link rel="stylesheet" href="<?php echo base_url() ?>assets/style_utama.css">
 
 </head>
 
 <body>
   <div class="navigasi">
-    <a href="#">Login</a>
-    <a href="#">Daftar</a>
+
   </div>
 
   <div class="judul">
