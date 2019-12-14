@@ -13,7 +13,7 @@ if(!isset($data)){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/style.css">
     <title>Buat Laporan</title>
-    <script type="text/javascript" src="assets/javascript/validasi.js">
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/javascript/validasi.js">
 
     </script>
 </head>
@@ -32,7 +32,7 @@ if(!isset($data)){
     </div>
     <br>
 
-    <form onsubmit="return validasi()" action="<?php echo base_url() . "Buat_laporan/kirim_L" ?>" method="post" enctype="multipart/form-data">
+    <form onsubmit="return validasi()" action="<?php echo base_url() . "index.php/Buat_laporan/kirim_L" ?>" method="post" enctype="multipart/form-data">
         <div class="Kotak_Komentar">
             <textarea  id="komentar" name="Komentar" rows="18" cols="80">Laporan/Komentar</textarea>
         </div>
