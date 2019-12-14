@@ -8,6 +8,18 @@ class Model_lihat_selengkapnya extends CI_Model{
 
     return $exec->result();
   }
+
+  //public function hapus_laporan($where, $laporan){
+    //$sql = "delete from laporan where id_laporan=''";
+    //$exec = $this->db->query($sql);
+
+    //return $exec->result();
+  //}
+
+  function hapus_laporan($where,$laporan){
+    $this->db->where($where);
+    $this->db->delete($laporan);
+  }
 }
 
  ?>
